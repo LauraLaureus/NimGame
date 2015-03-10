@@ -1,7 +1,7 @@
 
 package Gamers;
 
-public interface Gamer {
+public interface Player {
 
     public int play(int currentGamePieces);
 }

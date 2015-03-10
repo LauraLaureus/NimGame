@@ -1,11 +1,11 @@
 
 package Gamers;
 
-public class IANimGamer implements Gamer{
+public class IANimPlayer implements Player{
 
     private int pieces;
 
-    public IANimGamer(int pieces) {
+    public IANimPlayer(int pieces) {
         this.pieces = pieces;
     }
 

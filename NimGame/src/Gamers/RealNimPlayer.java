@@ -1,7 +1,7 @@
 
 package Gamers;
 
-public class RealNimGamer implements Gamer {
+public class RealNimPlayer implements Player {
 
     @Override
     public int play(int currentGamePieces) {

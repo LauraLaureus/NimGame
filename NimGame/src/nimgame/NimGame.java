@@ -1,8 +1,8 @@
 
 package nimgame;
 
-import Gamers.IANimGamer;
-import Gamers.RealNimGamer;
+import Gamers.IANimPlayer;
+import Gamers.RealNimPlayer;
 
 public class NimGame {
 
@@ -27,8 +27,8 @@ public class NimGame {
         al inicio de la partida.
         */
         
-        IANimGamer ia = new IANimGamer(pieces);
-        RealNimGamer real = new RealNimGamer();
+        IANimPlayer ia = new IANimPlayer(pieces);
+        RealNimPlayer real = new RealNimPlayer();
         
         while(pieces > 0){
             pieces = ia.play(pieces);
