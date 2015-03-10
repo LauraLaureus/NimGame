@@ -1,8 +1,8 @@
 
 package nimgame;
 
-import Gamers.IANimPlayer;
-import Gamers.RealNimPlayer;
+import Players.IANimPlayer;
+import Players.RealNimPlayer;
 
 public class NimGame {
 
@@ -31,13 +31,13 @@ public class NimGame {
         RealNimPlayer real = new RealNimPlayer();
         
         while(pieces > 0){
-            pieces = ia.play(pieces);
+            pieces = ia.move(pieces);
             if(pieces == 0){
                 System.out.println("La inteligencia artificial ha ganado");
                 break;
             }
             
-            pieces = real.play(pieces);
+            pieces = real.move(pieces);
             if(pieces == 0){
                 System.out.println("El jugador ha ganado");
                 break;
